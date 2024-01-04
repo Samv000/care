@@ -1,0 +1,464 @@
+nav {
+    background-color: #F5F7F8;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sign button {
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    color: black;
+    background-color: #F4CE14; 
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.sign button:hover {
+    background-color: #D3A70A;
+    transform: scale(1.03);
+}
+
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    padding-top: 60px;
+    padding-bottom: 56px;
+    align-items: center;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 70px;
+}
+
+.search-container input {
+    width: 70%;
+    padding: 10px;
+    border: 3px solid #F4CE14;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.search-container select {
+    padding: 10px;
+    border: 3px solid #F4CE14;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+
+.search-container button {
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    background-color:#ffc400; 
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    margin-left: 20px;
+}
+
+.search-container button :hover {
+    background-color: #ffc800;
+    transform: scale(1.03);
+}
+
+.total{
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.flex-box img {
+    width: 40%; 
+    border-radius: 10px; 
+}
+
+
+.first-text:hover {
+    opacity: 1;
+}
+
+.title{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    font-size: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-stroke: 1px #ffc800;
+    color: transparent;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -400px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.under{
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: 'DM Serif Display', serif; 
+    font-size: 30px;
+    
+}
+
+.doc1{
+    display: flex;
+    animation: floating 3s linear infinite;
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.main01 {
+    padding: 230px; 
+  }
+  
+  .card {
+    margin-bottom: 20px; 
+    cursor: pointer;
+    border: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .row {
+    margin-bottom: 20px; /
+  }
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+
+.firsttitle {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+    margin-top: 40px; 
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 57%;
+  }
+  
+ 
+  
+  .main01 {
+    padding: 34px 56px;
+  }
+  
+
+  
+.para{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+   
+}
+
+.container01 .card01{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,15);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container01 .card01:hover{
+    height: 400px;
+
+}
+
+.container01 .card01 .imgbx{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.container01 .card01:hover .imgbx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #1e1e1e;
+}
+
+.container01 .card01 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main02{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 58px;
+}
+
+.firsttitle03{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container01 .card01 .content{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    height: 35px;
+    transition: 0.5s;
+}
+
+.container01 .card01:hover .content{
+    top: 130px;
+    height: 890px;
+}
+
+.container01 .card01 .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container01 .card01 .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #F4CE14;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.main02 .button{
+     width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    color: black;
+    background-color: #F4CE14; 
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+
+.head01{
+    padding: 45px 56px;
+    text-align: center;
+    font-family: MontserratEB;
+    align-items: center;
+    justify-content: center;
+    color: #1e1e1e;
+}
+
+.container02{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+    overflow: hidden;
+    border-radius: 34px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container05 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-pic01 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url('images/story/03.\ Healthy\ Heart.jpg');
+    background-size: cover;
+
+}
+
+.profile-pic02 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url('images/story/4.png');
+    background-size: cover;
+}
+
+
+.profile-pic03 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url('images/story/Self-Control.jpg');
+    background-size: cover;
+}
+
+.profile-pic04 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url('images/story/Healthy\ meal\ planning\ diet.png');
+    background-size: cover;
+}
+
+h3, p {
+    margin: 0;
+}
+
+
+.box{
+    animation: floating01 3s linear infinite;
+}
+
+@keyframes floating01{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.last01 {
+    margin: 88px;
+    float: left; 
+    max-width: 600px; 
+    margin-left: 90px; 
+}
+
+.last01 img {
+    width: 100%; 
+    height: auto; 
+}
+
+.description {
+    flex: 1; 
+    padding: 230px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
